@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisflux</title>
+    <style>
+        .formBlocks{
+            margin: 20px;
+        }
+    </style>    
+</head>
+<body>
+    <form onsubmit="">
+        <h1 style="color: red;">Registration Form</h1><br>
+        
+        <div class="formBlocks">
+            <label>First Name: </label>
+            <input type="text" name="firstName" placeholder="Enter your firstname">
+        </div>
+        <div class="formBlocks">
+            <label>Last Name: </label>
+            <input type="text" name="lastName" placeholder="Enter your lastname">
+        </div>
+        <div class="formBlocks">
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="formBlocks">
+            <label>Phone Number: </label>
+            <input type="number" name="phoneNumber" placeholder="Enter your phone number">
+        </div>
+
+        <div class="formBlocks">
+            <label for="gender">Gender:</label><br>
+            <span>
+                <label>
+                    <input type="radio" name="gender" value="female"/>
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="male"/>
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Prefer not to say"/>
+                    Prefer not to say
+                </label>
+            </span>
+        </div>
+
+        <div class="formBlocks">
+            <input type="checkbox" name="receiveEmails"/>
+            <label for="receiveEmails">Do you want to receive emails?</label>
+        </div>
+
+        <div class="formBlocks">
+            <label for="country">Country</label>
+            <select name="country">
+                <option value="ind">India</option>
+                <option value="ind">Canada</option>
+                <option value="ind">Australia</option>
+                <option value="ind">Pakistan</option>
+                <option value="ind">Sri Lanka</option>
+                <option value="ind">Nepal</option>
+                <option value="ind">Japan</option>
+                <option value="ind">China</option>
+            </select>
+        </div>
+
+        <div class="formBlocks">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+</html>

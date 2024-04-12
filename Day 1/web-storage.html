@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web storage</title>
+  </head>
+  <body>
+    <div>
+      <section>Current Counter: <span id="counter">0</span></section>
+      <section>Local Counter: <span id="counter-local">0</span></section>
+      <section>Session Counter: <span id="counter-session">0</span></section>
+      <button id="increment-btn">Increment Counter</button>
+      <br /><br />
+      <button id="local-btn">Save to LocalStorage</button>
+      <button id="session-btn">Save to SessionStorage</button>
+    </div>
+
+    <script>
+      let counter = 0;
+      const sessionCounterKey = "session-counter";
+      const localCounterKey = "local-counter";
+
+      const counterSpan = document.getElementById("counter");
+      const localCounterSpan = document.getElementById("counter-local");
+      const sessionCounterSpan = document.getElementById("counter-session");
+
+      const incrementBtn = document.getElementById("increment-btn");
+      const localStorageBtn = document.getElementById("local-btn");
+      const sessionStorageBtn = document.getElementById("session-btn");
+
+      incrementBtn.addEventListener("click", () => {
+        counter++;
+        counterSpan.innerHTML = counter;
+      });
+
+      localStorageBtn.addEventListener("click", () => {
+        localStorage.setItem(localCounterKey, counter.toString());
+        localCounterSpan.innerHTML = counter;
+      });
+
+      sessionStorageBtn.addEventListener("click", () => {
+        sessionStorage.setItem(sessionCounterKey, counter.toString());
+        sessionCounterSpan.innerHTML = counter;
+      });
+
+      window.addEventListener("load", () => {
+        const savedLocalCounter = localStorage.getItem(localCounterKey);
+        const savedSessionCounter = sessionStorage.getItem(sessionCounterKey);
+
+        if (savedLocalCounter !== null) {
+          localCounterSpan.innerHTML = savedLocalCounter;
+        }
+
+        if (savedSessionCounter !== null) {
+          sessionCounterSpan.innerHTML = savedSessionCounter;
+        }
+      });
+    </script>
+  </body>
+</html>
