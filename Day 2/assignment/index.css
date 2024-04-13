@@ -1,0 +1,38 @@
+.body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftDiv{
+    background-color: yellow;
+    font-size: 18px;
+    width: 350px;
+    padding: 10px 15px;
+}
+
+#rightDiv{
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+#spanId{
+    color: red;
+}
+h4{
+    color: rgba(189, 9, 244, 0.943);
+}
+
+.rightH2{
+    width: 97%;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+
+}
