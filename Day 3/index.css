@@ -1,0 +1,62 @@
+.body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: "Gilroy";
+    /* font-size: larger; */
+    color: rgb(74, 74, 74);
+}
+
+#leftDiv {
+    font-family: "Gilroy";
+    height: 100vh;
+    width: 300px;
+    background-color: #dadada;
+    font-size: 18px;
+    padding: 10px 15px;
+    position: sticky;
+    margin-right: 0;
+    top: 0;
+    left: 0;
+}
+
+#leftDiv a{
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(24, 24, 24);
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#rightDiv {
+    font-size: 20px;
+    margin: 50px 100px;
+    padding-left: 10px;
+    word-spacing: 6px;
+    line-height: 23px;
+
+    
+}
+
+#spanId {
+    color: red;
+}
+
+h4 {
+    color: rgba(189, 9, 244, 0.943);
+}
+
+/* .rightH2{
+    width: 97%;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+
+} */
