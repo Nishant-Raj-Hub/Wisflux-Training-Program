@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+label {
+    /* display: block; */
+    margin-bottom: 10px;
+}
+input{
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+#formId{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+
+}
+button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #024082;
+}
