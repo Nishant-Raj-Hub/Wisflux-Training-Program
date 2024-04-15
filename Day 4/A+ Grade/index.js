@@ -1,19 +1,16 @@
-function showLargestNumber(){
-    const number1 = parseFloat(document.getElementById('number1').value);
-    const number2 = parseFloat(document.getElementById('number2').value);
-    const number3 = parseFloat(document.getElementById('number3').value);
+function calcAGrade(){
+    const hindi = parseFloat(document.getElementById('hindi').value);
+    const english = parseFloat(document.getElementById('english').value);
+    const mathematics = parseFloat(document.getElementById('mathematics').value);
+    const socialStudies = parseFloat(document.getElementById('socialStudies').value);
+    const science = parseFloat(document.getElementById('science').value);
 
-    if(number1 > number2){
-        if(number1 > number3){
-            document.getElementById('result').innerHTML = `Largest Number is: ${number1}`;
-        }else{
-            document.getElementById('result').innerHTML = `Largest Number is: ${number3}`;
-        }
-    }
-    else if(number2 > number3){
-        document.getElementById('result').innerHTML = `Largest Number is: ${number2}`;
+    const totalMarks = hindi + english + mathematics + socialStudies + science;
+
+    if(totalMarks >= 90){
+        document.getElementById('result').innerHTML = "Your grade is A+";
     }else{
-        document.getElementById('result').innerHTML = `Largest Number is: ${number3}`;
+        document.getElementById('result').innerHTML = "Your grade is not A+";
     }
     
 }
