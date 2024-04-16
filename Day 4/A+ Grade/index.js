@@ -13,4 +13,5 @@ function calcAGrade(){
         document.getElementById('result').innerHTML = "Your grade is not A+";
     }
     
+    
 }
