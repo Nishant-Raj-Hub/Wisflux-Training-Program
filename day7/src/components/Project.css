@@ -1,0 +1,31 @@
+.project1{
+    width: 20%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.project1 img{
+    height: 200px;
+    width: 100%;
+}
+
+.projectSection{
+    display: flex;
+    flex-direction: row;
+
+}
+.heading3{
+    font-size: 24px;
+    margin-left: 45%;
+}
+
+button{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

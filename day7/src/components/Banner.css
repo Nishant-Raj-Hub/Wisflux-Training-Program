@@ -1,0 +1,16 @@
+.banner {
+  background-image: url("../assets/bannerimage.jpg");
+  height: 400px;
+  width: 100vw;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.bannerHeading{
+  font-size: 24px;
+  font-weight: bold;
+}

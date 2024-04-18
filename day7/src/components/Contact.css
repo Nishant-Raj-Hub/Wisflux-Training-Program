@@ -1,0 +1,63 @@
+/* label {
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.contact{
+    width: 400px;
+    height: 400px;
+    border: 2px ;
+    border-style: solid;
+    border-color: #dadada;
+    box-shadow: 0px 0px 2px 2px;
+} */
+
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

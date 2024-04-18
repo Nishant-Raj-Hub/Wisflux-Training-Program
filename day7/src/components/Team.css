@@ -1,0 +1,33 @@
+.teams{
+    display: flex;
+    flex-direction: column;
+}
+
+.teamMembers{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.teamMembers> img{
+    width: 200px;
+    border-radius: 50%;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.heading3{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 42%;
+}
+.teams h3{
+    line-height: 3px;
+}
