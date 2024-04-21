@@ -1,10 +1,8 @@
 [
     {
         "name": "nishant",
-        "age": "30"
-    },
-    {
-        "name": "nikhil",
-        "age": "20"
+        "age": "23",
+        "email": "nishant@gmail.com",
+        "gender": "Male"
     }
 ]
